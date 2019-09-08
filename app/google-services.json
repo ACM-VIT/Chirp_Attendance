@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "909902178628",
+    "firebase_url": "https://chirpattendance.firebaseio.com",
+    "project_id": "chirpattendance",
+    "storage_bucket": "chirpattendance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909902178628:android:c3e311643541c52770cf11",
+        "android_client_info": {
+          "package_name": "com.example.chirpattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909902178628-kq0ii6vj49nai1kftff4l19flpv83q5l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chirpattendance",
+            "certificate_hash": "013e8c84f5bf894e0f763eb1adabc9dc4331ce3b"
+          }
+        },
+        {
+          "client_id": "909902178628-bvfud9pl343qqrp2aqfsqu4hthmlrv18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyoCmPLjzIay5OrW3uO2cCr-eEMnepiqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909902178628-bvfud9pl343qqrp2aqfsqu4hthmlrv18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

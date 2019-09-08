@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :chirpsdk-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df6dfdb770b3b9b0e9d42c54efbfd791/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df6dfdb770b3b9b0e9d42c54efbfd791/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
