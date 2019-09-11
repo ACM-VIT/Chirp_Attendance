@@ -49,7 +49,7 @@ public class UserDetailsFragment extends Fragment {
         edt2 = view.findViewById(R.id.edt2);
         edt3 = view.findViewById(R.id.edt3);
 
-        String imei = getArguments().getString("imei");
+//        String imei = getArguments().getString("imei");
 
 
         final FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();

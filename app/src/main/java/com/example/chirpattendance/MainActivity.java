@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        String imei = getImei();
+  /*      String imei = getImei();
         sendImei(imei);
-
+*/
 
     }
 
-    private String getImei() {
+  /*  private String getImei() {
         int MyDeviceAPI = Build.VERSION.SDK_INT;
         String imei = "";
         if (MyDeviceAPI >= 26) {
@@ -65,11 +65,11 @@ public class MainActivity extends AppCompatActivity {
             TelephonyManager tm = (TelephonyManager)
                     getSystemService(this.TELEPHONY_SERVICE);
 
-            imei = tm.getDeviceId();
+            //imei = tm.getDeviceId();
         }
         return imei;
     }
-
+*/
     private void sendImei(String imei) {
         Bundle bundle = new Bundle();
         bundle.putString("imei", imei);

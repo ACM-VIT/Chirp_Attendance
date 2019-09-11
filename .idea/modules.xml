@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CHIRP ATTENDANCE.iml" filepath="$PROJECT_DIR$/CHIRP ATTENDANCE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chirp_Attendance.iml" filepath="$PROJECT_DIR$/Chirp_Attendance.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -56,11 +56,13 @@ public class ChirpFragment extends Fragment {
         animationView = view.findViewById(R.id.animationView);
 
         chirpConnect = new ChirpConnect(context, CHIRP_APP_KEY, CHIRP_APP_SECRET);
+/*
 
         imgbtn = view.findViewById(R.id.imagebtn);
 
         imgbtn.setAlpha(.4f);
         imgbtn.setClickable(false);
+*/
 
         /*
         = new ChirpConnect(this, CHIRP_APP_KEY, CHIRP_APP_SECRET);
@@ -76,8 +78,10 @@ public class ChirpFragment extends Fragment {
         if (setConfigError.getCode() > 0) {
             Log.v("ChirpSDK: ", "Configured ChirpSDK");
         } else {
+/*
             imgbtn.setAlpha(1f);
             imgbtn.setClickable(true);
+*/
 
         }
 
@@ -231,6 +235,7 @@ public class ChirpFragment extends Fragment {
         } else {
             stopSdk();
         }
+
     }
 
 }

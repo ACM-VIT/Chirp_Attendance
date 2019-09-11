@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: :chirpsdk-release:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df6dfdb770b3b9b0e9d42c54efbfd791/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/df6dfdb770b3b9b0e9d42c54efbfd791/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e54ef3c831ba1b79e7e2153c4af6c1e7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e54ef3c831ba1b79e7e2153c4af6c1e7/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
