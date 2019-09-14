@@ -14,7 +14,7 @@
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="256dp"
-        android:layout_height="47dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -25,12 +25,12 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395">
+        app:layout_constraintVertical_bias="0.444">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="Email" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -39,7 +39,7 @@
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="256dp"
-        android:layout_height="47dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -50,14 +50,13 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.500">
+        app:layout_constraintVertical_bias="0.577">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="User ID" />
-
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -67,7 +66,7 @@
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="256dp"
-        android:layout_height="47dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -83,12 +82,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btnSubmit"
         android:layout_width="136dp"
         android:layout_height="65dp"
         android:layout_marginStart="8dp"
@@ -97,10 +96,10 @@
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.749" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

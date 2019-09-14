@@ -7,11 +7,10 @@
     tools:context=".ChirpFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
-        android:layout_width="264dp"
-        android:layout_height="282dp"
+        android:layout_width="304dp"
+        android:layout_height="358dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -22,8 +21,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498"
-        app:lottie_fileName="animation1.json"
-        />
+        app:lottie_fileName="animation1.json" />
 
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="240dp"
+        android:layout_height="284dp"
+        android:src="@drawable/ic_ellipse_1"
+        app:layout_constraintBottom_toBottomOf="@+id/animationView"
+        app:layout_constraintEnd_toEndOf="@+id/animationView"
+        app:layout_constraintStart_toStartOf="@+id/animationView"
+        app:layout_constraintTop_toTopOf="@+id/animationView" />
 
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="120dp"
+        android:layout_height="187dp"
+        android:clickable="true"
+        android:src="@drawable/ic_voice_recording"
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
