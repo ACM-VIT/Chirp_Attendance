@@ -409,6 +409,18 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottie_autoPlay
+attr lottie_cacheStrategy
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
 attr materialButtonStyle
 attr materialCardViewStyle
 attr maxActionInlineWidth
@@ -1080,11 +1092,13 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_ellipse_1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_voice_recording
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -1166,6 +1180,7 @@ id adjust_width
 id alertTitle
 id all
 id always
+id animationView
 id async
 id auto
 id barrier
@@ -1173,7 +1188,7 @@ id beginning
 id blocking
 id bottom
 id btn
-id btn1
+id btnSubmit
 id buttonPanel
 id cancel_action
 id center
@@ -1183,6 +1198,7 @@ id chains
 id checkbox
 id checked
 id chronometer
+id circle
 id clip_horizontal
 id clip_vertical
 id collapseActionView
@@ -1221,6 +1237,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id fragment_auth
 id fragment_container
 id fragment_user_details
 id ghost_view
@@ -1246,9 +1263,11 @@ id line1
 id line3
 id listMode
 id list_item
+id lottie_layer_name
 id masked
 id media_actions
 id message
+id mic
 id middle
 id mini
 id mtrl_child_content_container
@@ -1274,6 +1293,8 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id restart
+id reverse
 id right
 id right_icon
 id right_side
@@ -1318,6 +1339,7 @@ id standard
 id start
 id status_bar_latest_event_content
 id stretch
+id strong
 id submenuarrow
 id submit_area
 id tabMode
@@ -1357,6 +1379,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id weak
 id wide
 id withText
 id wrap
@@ -1433,6 +1456,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_auth
 layout fragment_chirp
 layout fragment_user_details
 layout notification_action
@@ -2070,6 +2094,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable LottieAnimationView lottie_autoPlay lottie_cacheStrategy lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_repeatCount lottie_repeatMode lottie_scale
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle

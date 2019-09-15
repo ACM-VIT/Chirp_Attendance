@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5f95c60b2a9b2714ec5ee19d412f7650\AndroidManifest.xml:17:1-24:12
 MERGED from [com.airbnb.android:lottie:2.5.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dc37ba9eaecb559672c16be104ab6e0c\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a8ed6246f1f48a2807c35c7524618cbb\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\77cbaf690816096163762898839632dc\AndroidManifest.xml:2:1-11:12
-MERGED from [:chirpsdk-release:] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6dfdb770b3b9b0e9d42c54efbfd791\AndroidManifest.xml:2:1-12:12
+MERGED from [:chirpsdk-release:] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e54ef3c831ba1b79e7e2153c4af6c1e7\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\bf0ccc7d5009e4b5f5c2bae9811d3101\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\0b809bf4235f1ecba1a76fbed3c12d02\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\44b3a529539de4fa1d44176a06db425d\AndroidManifest.xml:17:1-42:12
@@ -65,29 +65,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lenovo\.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e7abb2284d27b011c36c1f6f05cae3a5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\f352725e8cc17be194dd4b9c5a6e3af7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b836293e45195a1266ba78b6cde6200b\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:3:5-42
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:1-23:12
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:5:5-75
-	android:name
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:5:22-72
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:6:5-66
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6e18300e0093d2e1b763394440ffb3\AndroidManifest.xml:22:5-67
@@ -101,9 +97,37 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\13a7404b811a1d6b501ffe4183489ead\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\13a7404b811a1d6b501ffe4183489ead\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:7:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:8:5-79
+MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6e18300e0093d2e1b763394440ffb3\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6e18300e0093d2e1b763394440ffb3\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7c8c0fd11a41b49ba14c2f7d525551d0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7c8c0fd11a41b49ba14c2f7d525551d0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e5e1463b4654fb99143a0e59ac790dd0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e5e1463b4654fb99143a0e59ac790dd0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7727a0277912b84ab5f3be03495f417a\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7727a0277912b84ab5f3be03495f417a\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\13a7404b811a1d6b501ffe4183489ead\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\13a7404b811a1d6b501ffe4183489ead\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:10:5-74
+	android:name
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:10:22-72
 application
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:7:5-21:19
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:12:5-26:19
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5f95c60b2a9b2714ec5ee19d412f7650\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5f95c60b2a9b2714ec5ee19d412f7650\AndroidManifest.xml:22:5-20
 MERGED from [com.airbnb.android:lottie:2.5.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dc37ba9eaecb559672c16be104ab6e0c\AndroidManifest.xml:12:5-20
@@ -155,35 +179,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Le
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\3c618943f18039c60cd2bddd8549c093\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:18:9-40
 activity#com.example.chirpattendance.MainActivity
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:19:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml:23:27-74
 uses-sdk
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5f95c60b2a9b2714ec5ee19d412f7650\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5f95c60b2a9b2714ec5ee19d412f7650\AndroidManifest.xml:20:5-44
 MERGED from [com.airbnb.android:lottie:2.5.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dc37ba9eaecb559672c16be104ab6e0c\AndroidManifest.xml:8:5-10:41
@@ -192,8 +216,8 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lenovo\.gradle\caches\
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a8ed6246f1f48a2807c35c7524618cbb\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\77cbaf690816096163762898839632dc\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\77cbaf690816096163762898839632dc\AndroidManifest.xml:5:5-7:41
-MERGED from [:chirpsdk-release:] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6dfdb770b3b9b0e9d42c54efbfd791\AndroidManifest.xml:8:5-10:41
-MERGED from [:chirpsdk-release:] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6dfdb770b3b9b0e9d42c54efbfd791\AndroidManifest.xml:8:5-10:41
+MERGED from [:chirpsdk-release:] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e54ef3c831ba1b79e7e2153c4af6c1e7\AndroidManifest.xml:8:5-10:41
+MERGED from [:chirpsdk-release:] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e54ef3c831ba1b79e7e2153c4af6c1e7\AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\bf0ccc7d5009e4b5f5c2bae9811d3101\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\bf0ccc7d5009e4b5f5c2bae9811d3101\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\0b809bf4235f1ecba1a76fbed3c12d02\AndroidManifest.xml:5:5-44
@@ -306,16 +330,16 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Lenovo\.gradle\cach
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\f352725e8cc17be194dd4b9c5a6e3af7\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b836293e45195a1266ba78b6cde6200b\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b836293e45195a1266ba78b6cde6200b\AndroidManifest.xml:5:5-44
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\CHIRP ATTENDANCE\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lenovo\AndroidStudioProjects\Chirp_Attendance\app\src\main\AndroidManifest.xml
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\44b3a529539de4fa1d44176a06db425d\AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
@@ -350,20 +374,6 @@ ADDED from [com.google.firebase:firebase-auth:19.0.0] C:\Users\Lenovo\.gradle\ca
 		ADDED from [com.google.firebase:firebase-auth:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\44b3a529539de4fa1d44176a06db425d\AndroidManifest.xml:38:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\44b3a529539de4fa1d44176a06db425d\AndroidManifest.xml:37:17-109
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6e18300e0093d2e1b763394440ffb3\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\df6e18300e0093d2e1b763394440ffb3\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7c8c0fd11a41b49ba14c2f7d525551d0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7c8c0fd11a41b49ba14c2f7d525551d0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e5e1463b4654fb99143a0e59ac790dd0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\e5e1463b4654fb99143a0e59ac790dd0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7727a0277912b84ab5f3be03495f417a\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7727a0277912b84ab5f3be03495f417a\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\13a7404b811a1d6b501ffe4183489ead\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\13a7404b811a1d6b501ffe4183489ead\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:25:22-76
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:19.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\5320010fd4219d464818ec4befe1a4bc\AndroidManifest.xml:32:13-34:85
 	android:value
