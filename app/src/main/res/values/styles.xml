@@ -5,5 +5,9 @@
         <!-- Customize your theme here. -->
 
     </style>
+    <style name="inputboxes" parent="android:Theme.Black.NoTitleBar">
+
+    </style>
+
 
 </resources>
