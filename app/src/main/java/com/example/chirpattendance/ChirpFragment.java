@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.util.Log;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.firebase.database.FirebaseDatabase;
@@ -67,7 +68,8 @@ public class ChirpFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                circle.setVisibility(View.VISIBLE);
+                Log.e("MIC","MIC PRESSED");
+                //circle.setVisibility(View.VISIBLE);
                 chirpConfig();
 
             }
@@ -92,6 +94,7 @@ public class ChirpFragment extends Fragment {
         }
 
         chirpConnect.setListener(connectEventListener);
+        chirpConnect.start();
     }
 
     ConnectEventListener connectEventListener = new ConnectEventListener() {
@@ -112,13 +115,15 @@ public class ChirpFragment extends Fragment {
              * If the payload was decoded successfully, it is passed in data.
              * Otherwise, data is null.
              */
-            animationView.pauseAnimation();
+            /*animationView.pauseAnimation();*/
 
             String data = null;
             if (bytes != null) {
                 //DECODING THE FORM
-                FirebaseDatabase.getInstance().getReference().child("").child("");
-                FirebaseDatabase.getInstance().getReference("https://chirpattendance.firebaseio.com/").child("");
+             //   FirebaseDatabase.getInstance().getReference().child("").child("");
+//                FirebaseDatabase.getInstance().getReference("https://chirpattendance.firebaseio.com/").child("");
+
+                Toast.makeText(context,"RECIEVED: " + new String(bytes) ,Toast.LENGTH_LONG).show();
 
             }
 
@@ -132,9 +137,9 @@ public class ChirpFragment extends Fragment {
              * No data has yet been received.
              */
 
-            animationView.setAnimation("animation1.json");
+            /*animationView.setAnimation("animation1.json");
             animationView.playAnimation();
-            animationView.setSpeed(10);
+            animationView.setSpeed(10);*/
         }
 
         @Override

@@ -1,6 +1,8 @@
 package com.example.chirpattendance;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -14,6 +16,7 @@ import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,12 +24,16 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "API";
     SharedPreferences sharedPreferences;
     String uid = "123fsdf321";
+    int PERMISSION_READ_STATE = 0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
 
         sharedPreferences = getSharedPreferences("User Details", MODE_PRIVATE);
         String email = sharedPreferences.getString("email", null);
@@ -90,15 +97,21 @@ public class MainActivity extends AppCompatActivity {
                 //                                          int[] grantResults)
                 // to handle the case where the user grants the permission. See the documentation
                 // for Activity#requestPermissions for more details.
+                if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_PHONE_STATE)
+                        != PackageManager.PERMISSION_GRANTED) {
+                    // We do not have this permission. Let's ask the user
+                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_PHONE_STATE}, PERMISSION_READ_STATE);
+
+
+                }
+
                 return "";
             }
             imei = telephonyManager.getImei();
+        } else {
+            imei = telephonyManager.getDeviceId();
         }
-        else
-        {
-            imei=telephonyManager.getDeviceId();
-        }
-    return imei;
+        return imei;
     }
 
     private void sendImei(String imei) {
