@@ -2,6 +2,7 @@ package com.example.chirpattendance;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.LogPrinter;
@@ -53,6 +54,7 @@ public class UserDetailsFragment extends Fragment {
         btnSubmit = view.findViewById(R.id.btnSubmit);
         edt2 = view.findViewById(R.id.edt2);
         edt3 = view.findViewById(R.id.edt3);
+
 
         try {
             String imei = getArguments().getString("imei");
