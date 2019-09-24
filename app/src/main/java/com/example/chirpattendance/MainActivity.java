@@ -19,11 +19,15 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "API";
     SharedPreferences sharedPreferences;
-    String uid = "123fsdf321";
+
+//    String uid = "123fsdf321";
     int PERMISSION_READ_STATE = 0;
 
 
@@ -33,6 +37,23 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+
+//me
+        // CURRENT USER
+        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+
+
+        // ACCESS UID
+        /*if (acct != null) {
+            uid = acct.getId();//this only is the uid, yes
+    //        personName = acct.getDisplayName();
+            *//*String personGivenName = acct.getGivenName();
+            String personFamilyName = acct.getFamilyName();
+            String personEmail = acct.getEmail();
+            Uri personPhoto = acct.getPhotoUrl();*//*
+        }
+*///me
 
 
         sharedPreferences = getSharedPreferences("User Details", MODE_PRIVATE);

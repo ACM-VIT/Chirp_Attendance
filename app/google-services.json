@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "909902178628-kq0ii6vj49nai1kftff4l19flpv83q5l.apps.googleusercontent.com",
+          "client_id": "909902178628-ksrckns50gq6re5ku384l9qrokca5ong.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.chirpattendance",
-            "certificate_hash": "013e8c84f5bf894e0f763eb1adabc9dc4331ce3b"
+            "certificate_hash": "ad8555ee55d30994eb83d8b6f944ca056473e642"
           }
         },
         {

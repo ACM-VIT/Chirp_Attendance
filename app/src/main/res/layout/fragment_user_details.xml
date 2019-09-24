@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".UserDetailsFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,7 +12,7 @@
     <com.google.android.material.textfield.TextInputLayout
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-        android:layout_width="256dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -29,6 +28,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt1"
+            android:background="#990099CC"
+            android:textStyle="bold|italic"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Email" />
@@ -38,7 +39,7 @@
     <com.google.android.material.textfield.TextInputLayout
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-        android:layout_width="256dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -54,6 +55,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt2"
+            android:background="#990099CC"
+            android:textStyle="bold|italic"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="User ID" />
@@ -65,13 +68,13 @@
     <com.google.android.material.textfield.TextInputLayout
 
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-        android:layout_width="256dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-
+        android:hint="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -81,6 +84,9 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt3"
+            android:background="#990099CC"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Name" />
@@ -94,6 +100,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"

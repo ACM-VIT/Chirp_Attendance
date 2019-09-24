@@ -2,6 +2,7 @@ package com.example.chirpattendance;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.LogPrinter;
@@ -54,18 +55,19 @@ public class UserDetailsFragment extends Fragment {
         edt2 = view.findViewById(R.id.edt2);
         edt3 = view.findViewById(R.id.edt3);
 
+
         try {
             String imei = getArguments().getString("imei");
         } catch (NullPointerException e) {
             Log.e(".....", "" + e.getMessage());
         }
 
-//        final FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        final FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
 
         //FETCHING THE DETAILS OF THE CURRENT USER
 
-       /* if (currentUser != null) {
+        if (currentUser != null) {
             String name = currentUser.getDisplayName();
             if (name == null || name.length() == 0) {
                 edt3.setText(edt3.getHint());
@@ -75,22 +77,23 @@ public class UserDetailsFragment extends Fragment {
 
             String email = currentUser.getEmail();
             edt1.setText(email);
-        }*/
+        }
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-               /* String email = edt1.getText().toString();
+
+                String email = edt1.getText().toString();
                 String name = edt3.getText().toString();
                 String uid = currentUser.getUid();
                 String user_id = edt2.getText().toString().trim();
-*/
-
+/*
                 String email = "devaansh51@gmail.com";
                 String name = "DEVANSH";
                 String uid = "123466eg";
                 String user_id = "213648as";
+*/
 
                 DatabaseReference myref = FirebaseDatabase.getInstance().getReference().child("users");
                 Map<String, User> users = new HashMap<>();
