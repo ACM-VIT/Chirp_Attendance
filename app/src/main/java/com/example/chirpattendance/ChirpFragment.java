@@ -123,7 +123,9 @@ public class ChirpFragment extends Fragment {
              //   FirebaseDatabase.getInstance().getReference().child("").child("");
 //                FirebaseDatabase.getInstance().getReference("https://chirpattendance.firebaseio.com/").child("");
 
-                Toast.makeText(context,"RECIEVED: " + new String(bytes) ,Toast.LENGTH_LONG).show();
+                //Toast.makeText(context,"RECIEVED: " + new String(bytes) ,Toast.LENGTH_LONG).show();
+
+                showBottomSheetDialogFragment();
 
             }
 
