@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -14,8 +19,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_ellipse_1" />
-                            <entry key="sourceFile" value="C:\Users\Lenovo\Desktop\Ellipse 1.svg" />
+                            <entry key="outputName" value="ic_check" />
+                            <entry key="sourceFile" value="C:\Users\Lenovo\Desktop\Attendance Designs\check.svg" />
                           </map>
                         </option>
                       </PersistentState>

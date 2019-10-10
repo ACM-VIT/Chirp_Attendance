@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ATTENDANCE MARKED"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="36sp" />
+    </LinearLayout>
+
+
+<LinearLayout
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+android:layout_width="match_parent"
+android:orientation="horizontal"
+android:paddingBottom="8dp"
+
+android:paddingTop="8dp">
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:src=""
+        android:tint="#737373" />
+
+<TextView
+    android:id="@+id/tv1"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Room Name : "
+    android:textColor="#737373"
+    android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/roomNme"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="#737373"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:orientation="horizontal"
+android:paddingBottom="8dp"
+
+android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:src=""
+        android:tint="#737373" />
+
+<TextView
+    android:id="@+id/tv2"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Room Id : "
+    android:textColor="#737373"
+    android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/roomId"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="#737373"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:orientation="horizontal"
+android:paddingBottom="8dp"
+
+android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_schedule" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center_vertical"
+        android:text="Date and Time : "
+        android:textColor="#737373"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/roomDate"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="#737373"
+        android:textSize="16sp"/>
+</LinearLayout>
+
+
+<LinearLayout
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:orientation="horizontal"
+android:paddingBottom="8dp"
+
+android:paddingTop="8dp">
+
+<ImageView
+    android:id="@+id/img4"
+    android:layout_width="58dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="8dp"
+    android:src="@drawable/ic_user"/>
+
+<TextView
+    android:id="@+id/tv4"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="User Id: "
+    android:textColor="#737373"
+    android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="#737373"
+        android:textSize="16sp"/>
+
+
+</LinearLayout></LinearLayout>

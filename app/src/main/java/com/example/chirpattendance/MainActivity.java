@@ -27,9 +27,12 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "API";
     SharedPreferences sharedPreferences;
 
+
 //    String uid = "123fsdf321";
     int PERMISSION_READ_STATE = 0;
 
+    String uid = null;
+    String personName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-//me
         // CURRENT USER
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
 

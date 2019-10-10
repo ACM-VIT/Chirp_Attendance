@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -29,11 +32,14 @@ import java.util.Map;
 
 public class UserDetailsFragment extends Fragment {
 
-    private TextInputEditText edt1;
-    private TextInputEditText edt2;
-    private TextInputEditText edt3;
+    private EditText edtEmail;
+    private EditText edtName;
+    private EditText edtUserId;
+    private TextView tvName;
+    private TextView tvUserId;
+    private TextView tvEmail;
 
-    private Button btnSubmit;
+    private ImageButton btnSubmit;
 
     SharedPreferences sharedPreferences;
     String Imei;
@@ -49,11 +55,11 @@ public class UserDetailsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_user_details, container, false);
 
-        edt1 = view.findViewById(R.id.edt1);
-        edt1.setEnabled(false);
+        edtEmail = view.findViewById(R.id.edtEmail);
+        edtEmail.setEnabled(false);
         btnSubmit = view.findViewById(R.id.btnSubmit);
-        edt2 = view.findViewById(R.id.edt2);
-        edt3 = view.findViewById(R.id.edt3);
+        edtName = view.findViewById(R.id.edtName);
+        edtUserId = view.findViewById(R.id.edtUserId);
 
 
         try {
@@ -70,13 +76,13 @@ public class UserDetailsFragment extends Fragment {
         if (currentUser != null) {
             String name = currentUser.getDisplayName();
             if (name == null || name.length() == 0) {
-                edt3.setText(edt3.getHint());
+                edtName.setText(edtName.getHint());
             } else {
-                edt3.setText(name);
+                edtName.setText(name);
             }
 
             String email = currentUser.getEmail();
-            edt1.setText(email);
+            edtEmail.setText(email);
         }
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
@@ -84,10 +90,10 @@ public class UserDetailsFragment extends Fragment {
             public void onClick(View view) {
 
 
-                String email = edt1.getText().toString();
-                String name = edt3.getText().toString();
+                String email = edtEmail.getText().toString();
+                String name = edtName.getText().toString();
                 String uid = currentUser.getUid();
-                String user_id = edt2.getText().toString().trim();
+                String user_id = edtUserId.getText().toString().trim();
 /*
                 String email = "devaansh51@gmail.com";
                 String name = "DEVANSH";

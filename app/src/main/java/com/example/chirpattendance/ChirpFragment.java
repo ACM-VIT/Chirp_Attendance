@@ -249,10 +249,18 @@ public class ChirpFragment extends Fragment {
 
     }
 
+    public void showBottomSheetDialogFragment(){
 
-
+        //View view = getLayoutInflater().inflate(R.layout.fragment_bottom_sheet, null);
+        BottomSheetFragment bottomSheetFragment = new BottomSheetFragment(context);
+        bottomSheetFragment.show(getActivity().getSupportFragmentManager(),bottomSheetFragment.getTag());
 
     }
+
+
+
+
+}
 
 
 
