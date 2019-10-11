@@ -19,6 +19,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.Tasks;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
@@ -42,7 +43,7 @@ public class UserDetailsFragment extends Fragment {
     private ImageButton btnSubmit;
 
     SharedPreferences sharedPreferences;
-    String Imei;
+    String imei;
 
     public UserDetailsFragment() {
         // Required empty public constructor
@@ -62,11 +63,6 @@ public class UserDetailsFragment extends Fragment {
         edtUserId = view.findViewById(R.id.edtUserId);
 
 
-        try {
-            String imei = getArguments().getString("imei");
-        } catch (NullPointerException e) {
-            Log.e(".....", "" + e.getMessage());
-        }
 
         final FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -135,6 +131,20 @@ public class UserDetailsFragment extends Fragment {
 
 
     }
+   /* private Boolean duplicationVerify(){
+
+        String imei = getArguments().getString("imei");
+
+     DatabaseReference myRef=FirebaseDatabase.getInstance().getReference();
+
+     if (myRef)
+     myRef.child("rooms").child("attendees").setValue(imei);
+
+
+
+
+    }*/
+
 
 
 }

@@ -5,8 +5,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -20,7 +23,16 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 import io.chirp.connect.ChirpConnect;
 import io.chirp.connect.models.ChirpConnectState;
@@ -68,7 +80,7 @@ public class ChirpFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Log.e("MIC","MIC PRESSED");
+                Log.e("MIC", "MIC PRESSED");
                 //circle.setVisibility(View.VISIBLE);
                 chirpConfig();
 
@@ -117,13 +129,13 @@ public class ChirpFragment extends Fragment {
              */
             /*animationView.pauseAnimation();*/
 
-            String data = null;
+            String data;
             if (bytes != null) {
-                //DECODING THE FORM
-             //   FirebaseDatabase.getInstance().getReference().child("").child("");
-//                FirebaseDatabase.getInstance().getReference("https://chirpattendance.firebaseio.com/").child("");
 
-                //Toast.makeText(context,"RECIEVED: " + new String(bytes) ,Toast.LENGTH_LONG).show();
+                data = new String(bytes);
+
+
+                Toast.makeText(context, "RECIEVED: " + data, Toast.LENGTH_LONG).show();
 
                 showBottomSheetDialogFragment();
 
@@ -233,7 +245,7 @@ public class ChirpFragment extends Fragment {
             Log.e(TAG, error.getMessage());
             return;
         }
-       mic.setAlpha(1f);
+        mic.setAlpha(1f);
         mic.setClickable(false);
     }
 
@@ -251,15 +263,60 @@ public class ChirpFragment extends Fragment {
 
     }
 
-    public void showBottomSheetDialogFragment(){
+    public void showBottomSheetDialogFragment() {
 
         //View view = getLayoutInflater().inflate(R.layout.fragment_bottom_sheet, null);
         BottomSheetFragment bottomSheetFragment = new BottomSheetFragment(context);
-        bottomSheetFragment.show(getActivity().getSupportFragmentManager(),bottomSheetFragment.getTag());
+        bottomSheetFragment.show(getActivity().getSupportFragmentManager(), bottomSheetFragment.getTag());
 
     }
 
+    public void searchRooms(final String key) {
 
+        DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("rooms");
+
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    if (dataSnapshot.hasChild(key)) {
+                        Room room = dataSnapshot.child(key).getValue(Room.class);
+                        String room_name = room.getRoomName();
+                        String unixTime=room.getUnixTime();
+                        String dateTime=dateTimeFormatter(unixTime);
+                    }
+                    //room_id  exists in Database
+
+                } else {
+                    //room_id doesn't exists.
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+
+    private String dateTimeFormatter(String unix) {
+
+        int unixTime = Integer.valueOf(unix);
+
+        // convert seconds to milliseconds
+        Date date = new java.util.Date(unixTime * 1000L);
+
+        // the format of your date
+        SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+
+        // give a timezone reference for formatting
+        sdf.setTimeZone(java.util.TimeZone.getTimeZone("GMT-4"));
+
+        String formattedDate = sdf.format(date);
+
+        return formattedDate;
+    }
 
 
 }

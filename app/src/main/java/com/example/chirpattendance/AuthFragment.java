@@ -17,7 +17,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import android.widget.ProgressBar;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AlertDialog;
 
 
@@ -43,7 +45,7 @@ public class AuthFragment extends Fragment {
 
     // Google Sign In
     private static final String TAG = "GoogleActivity";
-    private static final int RC_SIGN_IN = 9001;
+    private static final int GOOGLE_SIGN_IN = 123;
 
     // Google signInClient
     private GoogleSignInClient mGoogleSignInClient;
@@ -51,6 +53,7 @@ public class AuthFragment extends Fragment {
 
     // Progress bar
     Dialog dialog;
+    ProgressBar progressBar;
 
     public AuthFragment() {
         // Required empty public constructor
@@ -67,13 +70,17 @@ public class AuthFragment extends Fragment {
         /*AlertDialog.Builder builder = new AlertDialog.Builder(container.getContext());
         builder.setView(R.layout.);
         dialog = builder.create();
+
+
 */
+        progressBar = view.findViewById(R.id.progressBar);
+        mAuth = FirebaseAuth.getInstance();
+
         SignInButton signInButton = view.findViewById(R.id.sign_in_button);
 
 
         // SET THE DIMENSIONS OF THE SIGN IN BUTTON
         signInButton.setSize(SignInButton.SIZE_STANDARD);
-
 
 
         // CONFIGURE GOOGLE SIGN IN
@@ -83,9 +90,8 @@ public class AuthFragment extends Fragment {
                 .build();
         // [END CONFIG OF SIGN IN]
 
-                mGoogleSignInClient = GoogleSignIn.getClient(container.getContext(), gso);
+        mGoogleSignInClient = GoogleSignIn.getClient(container.getContext(), gso);
 
-        mAuth= FirebaseAuth.getInstance();
 
         /*btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,7 +105,7 @@ public class AuthFragment extends Fragment {
 //                setDialog(true);
                 signIn();
                 //fragmentSwitch();
-                fragmentSwitch();
+               //fragmentSwitch();
             }
         });
 
@@ -108,27 +114,9 @@ public class AuthFragment extends Fragment {
     }
 
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
 
-    }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-
-    }
-
-    private void fragmentSwitch() {
-        Log.e("FRAGMENT", "Fragment Switch");
-        Fragment fragment = new UserDetailsFragment();
-        FragmentManager manager = getActivity().getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.fragment_container, fragment);
-        transaction.commit();
-    }
-
+/*
     private void handleSignInResult(GoogleSignInResult result) {
         Log.d(TAG, "handleSignInResult:" + result.isSuccess());
         if (result.isSuccess()) {
@@ -141,34 +129,35 @@ public class AuthFragment extends Fragment {
 
 
 
-            /*Intent myIntent = new Intent(MainActivity.this, Student_Profile.class);
+            *//*Intent myIntent = new Intent(MainActivity.this, Student_Profile.class);
             startActivity(myIntent);
-            finish();*/
+            finish();*//*
 //            fragmentSwitch();
 
-                    //      setDialog(false);
+            //      setDialog(false);
 //            setDialog(false);
         }
+    }*/
+
+    private void signIn() {
+        progressBar.setVisibility(View.VISIBLE);
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, GOOGLE_SIGN_IN);
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser=mAuth.getCurrentUser();
-    }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
+        if (requestCode == GOOGLE_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account);
-                Log.e(TAG,"Google Sign In successful with Account Id"+account);
+                if (account != null) firebaseAuthWithGoogle(account);
+                Log.e(TAG, "Google Sign In successful with Account Id" + account);
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e);
@@ -178,18 +167,21 @@ public class AuthFragment extends Fragment {
     }
     // [END onactivityresult]
 
-    private void firebaseAuthWithGoogle(GoogleSignInAccount acct){
+    private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
         Log.d(TAG, "firebaseAuthWithGoogle:" + acct.getId());
 
-        AuthCredential credential= GoogleAuthProvider.getCredential(acct.getIdToken(),null);
+        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            progressBar.setVisibility(View.INVISIBLE);
                             Log.d(TAG, "signInWithCredential:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
+                            //FirebaseUser user = mAuth.getCurrentUser();
+                            fragmentSwitch();
                         } else {
+                            progressBar.setVisibility(View.INVISIBLE);
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                         }
                     }
@@ -197,23 +189,14 @@ public class AuthFragment extends Fragment {
     }
     // [END auth_with_google]
 
-
-
-    private void signIn() {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+    private void fragmentSwitch() {
+        Log.e("FRAGMENT", "Fragment Switch");
+        Fragment fragment = new UserDetailsFragment();
+        FragmentManager manager = getActivity().getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.fragment_container, fragment);
+        transaction.commit();
     }
-    //PROGRESS DIALOG
-
-
-
-    //PROGRESS DIALOG
-   /* private void setDialog(boolean show){
-        if (show) {
-            dialog.show();
-        }
-        else
-            dialog.dismiss();
-    }
-*/
 }
+
+

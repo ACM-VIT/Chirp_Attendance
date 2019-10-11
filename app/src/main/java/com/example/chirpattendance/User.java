@@ -1,6 +1,6 @@
 package com.example.chirpattendance;
 
-public class User {
+public class    User {
 
     public String email;
     public  String name;
